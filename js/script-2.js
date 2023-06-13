@@ -5,19 +5,19 @@ let shortCutIcon = [
     {icon:`IE.png`,Name:`Internet Explorer`,net: true, url:`https://www.bing.com/embed/`},
     {icon:`mine.png`,Name:`Minecraft`,net: true, url:`https://jonjon565.github.io/Beta/`},
     {icon:'mp4.svg',Name:'駅名記憶.mp4',net: true, url:'iframe/Re_ekimei.html'},
-    {icon:'noimg.png',Name:'Error',net: false, inner: '<img src="image/unnamed.png">'},
-    {icon:'mp4.svg',Name:'().mp4',net: true, url:'https://www.youtube.com/embed/yodR8OwruHA'},
+    //{icon:'noimg.png',Name:'Error',net: false, inner: '<img src="image/unnamed.png">'},
+    //{icon:'mp4.svg',Name:'().mp4',net: true, url:'https://www.youtube.com/embed/yodR8OwruHA'},
     {icon:'Windows7.svg', Name:'Windows7.svg', net: false, inner: '<img src="image/Windows7.svg" alt>'},
-    {icon:'mp4.svg', Name:'movie.mp4', net: true, url:'https://www.youtube.com/embed/F3qblfRzH_k'},
+    //{icon:'mp4.svg', Name:'movie.mp4', net: true, url:'https://www.youtube.com/embed/F3qblfRzH_k'},
     {icon:'txt.svg', Name:'Credits.txt', net: true, url: 'iframe/credits.html'},
     {icon:'TET.svg', Name:'TETRIS.exe', net: true, url: 'iframe/TETRIS.html'},
     {icon:'txt.svg', Name:'推奨環境.txt', net: false, inner: '<h1 class="midasi">Windows11</h1>'},
-    {icon:'idiot.png', Name:'YouAreAnIdiot.exe', net: true, url: 'https://www.youtube.com/embed/hiRacdl02w4'},
-    {icon:'mp4.svg', Name:'千本桜.mp3', net: false, inner: '<audio src="sound/sennbonn.wav" controls>Unsupported brouser</audio>'},
-    {icon:'mp4.svg', Name:'movie (1).mp4', net: true, url: 'https://www.youtube.com/embed/AauMXO97G2M'},
-    {icon:'mp4.svg', Name:'ナイトオブナイツ.mp3', net: false, inner: '<audio src="sound/nightOfNights.flac" controls>Unsupported brouser</audio>'},
-    {icon:'mp4.svg', Name:'Windows Sparta Remix.mp3', net: false, inner: '<audio src="sound/Windows Sparta Remix.mp3" controls></audio>'},
-    {icon:'mp4.svg', Name:'Windows(3.1~8).mp3', net: false, inner: '<audio src="sound/Windows(3.1~8).mp3" controls></audio>'},
+    //{icon:'idiot.png', Name:'YouAreAnIdiot.exe', net: true, url: 'https://www.youtube.com/embed/hiRacdl02w4'},
+    //{icon:'mp4.svg', Name:'千本桜.mp3', net: false, inner: '<audio src="sound/sennbonn.wav" controls>Unsupported brouser</audio>'},
+    //{icon:'mp4.svg', Name:'movie (1).mp4', net: true, url: 'https://www.youtube.com/embed/AauMXO97G2M'},
+    //{icon:'mp4.svg', Name:'ナイトオブナイツ.mp3', net: false, inner: '<audio src="sound/nightOfNights.flac" controls>Unsupported brouser</audio>'},
+    //{icon:'mp4.svg', Name:'Windows Sparta Remix.mp3', net: false, inner: '<audio src="sound/Windows Sparta Remix.mp3" controls></audio>'},
+    //{icon:'mp4.svg', Name:'Windows(3.1~8).mp3', net: false, inner: '<audio src="sound/Windows(3.1~8).mp3" controls></audio>'},
     {icon:'marisa (1).jpg', Name:'marisa (1).png', net: false, inner: '<img src="image/marisa (1).jpg" alt style="height: 100%;">'},
     {icon:'marisa (2).jpg', Name:'marisa (2).png', net: false, inner: '<img src="image/marisa (2).jpg" alt style="height: 100%;">'},
     {icon:'loup.svg', Name:'Windows ZONE.sb3', net: true, url: 'https://turbowarp.org/854429544/embed'}
@@ -267,10 +267,6 @@ function delShortCut(shortCutId = 0){
     b.removeChild(a);
     return;
 }
-delShortCut(4);
-delShortCut(10);
-delShortCut(11);
-delShortCut(12);
 let footer = document.querySelector('#taskWin');
 function setBackImage(path = null){
     document.body.style.backgroundImage = ''

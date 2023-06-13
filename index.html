@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Windows 95</title>
+        <link rel="stylesheet" href="css/css.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <body>
+        <!--ロード画面-->
+        <div id="loading">
+            <pre class="loadText">Startuping Windows 95...</pre>
+        </div>
+        <!--右クリックメニュー-->
+        <div id="RClickMenu">
+            <div class="clickMenu">
+                <span>開く(</span>
+                <span class="i">O</span>
+                <span>)..</span>
+            </div>
+            <div class="clickMenu">
+                <span>WindowsNT</span>
+            </div><div class="clickMenu">
+                <span>Windows9x</span>
+            </div>
+        </div>
+        <!--PC中核-->
+        <div id="PC">
+            <!--ショートカット-->
+            <div id="deskIcon">
+                <div class="desktop"></div>
+                <div class="desktop"></div>
+                <div class="desktop"></div>
+            </div>
+            <!--スタートメニュー-->
+            <ul id="menus"></ul>
+            <!--ウィンドウ-->
+            <div id="windows"></div>
+            <span id="select-box"></span>
+            <!--タスクバー-->
+            <footer class="menu-2">
+                <div id="start-menu">
+                    <img src="image/a.svg" alt="" id="start">
+                </div>
+                <!---->
+                <div id="lang-bar">
+                    <span>J </span>
+                    <span class="mode">A </span>
+                    <span class="any">
+                        <p>caps</p>
+                        <p>kana</p>
+                    </span>
+                </div>
+                <div id="mail">
+                    <pre id="time"></pre>
+                </div>
+                <div id="taskWin"></div>
+                <audio src="sound/win95startup.wav" autoplay id="a"></audio>
+                <audio src="sound/TADA--.wav" autoplay id="b"></audio>
+            </footer>
+        </div>
+        <script src="js/script-2.js"></script>
+        <script>
+            let c = document.getElementsByClassName('startImg')[7];
+                function shutdown() {
+                    let d = document.getElementById('PC');
+                    d.setAttribute('style', '')
+                    setTimeout(() => {
+                        document.body.style.cursor = 'none'
+                        document.body.style.backgroundImage = 'url("image/Boardwalk.svg")'
+                        return 1;
+                    }, 5000);
+                }
+            c.addEventListener('click', ()=>{
+                shutdown();
+                setTimeout(() => {
+                    let b = document.getElementById('b');
+                    b.play();
+                    document.body.style.backgroundColor = 'rgb(0,0,0)';
+                    document.body.style.display = 'none';
+                    let a = document.querySelector('html');
+                    a.style.backgroundColor = 'black';
+                    a.style.cursor = 'none';
+                }, 10000);
+                setTimeout(() => {
+                    document.body.innerHTML = '<h1>あなたのコンピューターの電源を切る<br>準備ができました</h1>'
+                    document.body.style.display = 'block';
+                    setTimeout(() => {
+                        window.open("about:blank", "_self").close();
+                    }, 10000);
+                }, 15000);
+            });
+            function restart(){
+                shutdown();
+                let a = document.getElementById('loading');
+                a.style.display = 'block';
+                document.body.setAttribute('style', 'background-image: none;');
+                startUp();
+            }
+        </script>
+    </body>
+</html>

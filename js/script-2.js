@@ -3,7 +3,7 @@ let deskTop = document.getElementsByClassName(`desktop`);
 let shortCutIcon = [
     {icon:`trash.png`,Name:`trash`, net: false, inner: ''},
     {icon:`IE.png`,Name:`Internet Explorer`,net: true, url:`https://www.bing.com/embed/`},
-    {icon:`mine.png`,Name:`Minecraft`,net: true, url:`https://jonjon565.github.io/Beta/`},
+    //{icon:`mine.png`,Name:`Minecraft`,net: true, url:`https://jonjon565.github.io/Beta/`},
     {icon:'mp4.svg',Name:'駅名記憶.mp4',net: true, url:'https://turbowarp.org/837640198/embed'},
     //{icon:'noimg.png',Name:'Error',net: false, inner: '<img src="image/unnamed.png">'},
     //{icon:'mp4.svg',Name:'().mp4',net: true, url:'https://www.youtube.com/embed/yodR8OwruHA'},

@@ -190,7 +190,6 @@ window.addEventListener(`load`, () => {
 let f;
 //windowsを起動
 let e = document.querySelector('audio#a');
-e.removeAttribute('muted');
 function startUp(){
     let startUpTimes = [
         500,

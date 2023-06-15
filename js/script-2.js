@@ -189,14 +189,14 @@ window.addEventListener(`load`, () => {
 });
 let f;
 //windowsを起動
+let e = document.querySelector('audio#a');
+e.removeAttribute('muted');
 function startUp(){
     let startUpTimes = [
         500,
         2000,
         5000
     ];
-    let e = document.querySelector('audio#a');
-    e.removeAttribute('muted');
     setTimeout(() => {
         let pre = document.querySelector('pre.loadText');
         for (let i = 0; i < 50; i++) {

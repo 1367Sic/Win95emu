@@ -206,7 +206,7 @@ function startUp(){
             pre.innerHTML = '';
             document.body.setAttribute('style', 'background-image: url("image/Boardwalk.svg");');
             setTimeout(() => {
-                let e = document.querySelector('audio');
+                let e = document.querySelector('audio#a');
                 e.removeAttribute('muted');
                 document.body.setAttribute('style', 'background-color: rgb(0, 109, 109);');
                 let a = document.getElementById('loading');

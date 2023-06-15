@@ -211,7 +211,9 @@ function startUp(){
                 document.body.setAttribute('style', 'background-color: rgb(0, 109, 109);');
                 let a = document.getElementById('loading');
                 a.style.display = 'none';
-                e.play();
+                setTimeout(() => {
+                    e.play();
+                }, 1)
                 setTimeout(()=>{
                     f = document.getElementById('PC');
                     f.style.display = 'block';

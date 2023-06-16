@@ -82,7 +82,7 @@ let mouseClicked = false;
 function createWindow(i = 0){
     let element = document.createElement(`div`);
         element.setAttribute(`class`, `window`);
-        if (!(i === 9)) {
+        if (!(i === 5)) {
             inner = `<header class="windowHeader"><pre class="title"><img src="image/${shortCutIcon[i].icon}" alt class="appImg">`;
         } else {
             inner = `<header class="windowHeader"><pre class="title"><img src="image/${shortCutIcon[i].icon}" alt class="appImg" style="margin-top: 10px">`;

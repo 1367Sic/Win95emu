@@ -22,7 +22,7 @@ let shortCutIcon = [
     {icon:'marisa (2).jpg', Name:'marisa (2).png', net: false, inner: '<img src="image/marisa (2).jpg" alt style="height: 100%;">'},
     {icon:'loup.svg', Name:'Windows ZONE.sb3', net: true, url: 'https://turbowarp.org/854429544/embed'},
     {icon:'loup.svg', Name:'マインスイーパ', net: true, url: 'https://scratch.mit.edu/projects/22709176/embed'},
-    {icon:'mp4.svg', Name:'Windowsも<br>吹っ切れた', net: true, url: 'sound/fukkireta.mp3'}
+    {icon:'mp4.svg', Name:'Windowsも吹っ切れた', net: true, url: 'sound/fukkireta.mp3'}
 ];
 let WindowOpen;
 //ショートカットを作成

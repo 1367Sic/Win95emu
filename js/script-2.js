@@ -59,7 +59,7 @@ function getTime(){
     time.innerHTML = nowTime;
 }
 function setClock(){
-    setInterval(getTime,1000);
+    setInterval(getTime,10);
 }
 setClock();
 
